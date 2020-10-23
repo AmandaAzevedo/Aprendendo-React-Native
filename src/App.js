@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 import CompOfficial, { Comp1, Comp2, Comp3} from './components/Multi'
 import FirstComponent from './components/First'
 
 export default () => (
-  <View>
+  <View style={style.App}>
     <CompOfficial />
     <Comp1 />
     <Comp2 />
@@ -13,3 +13,12 @@ export default () => (
     <FirstComponent />
   </View>
 )
+
+const style = StyleSheet.create({
+  App: {
+    backgroundColor: '#8a05be',
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  }
+})
